@@ -1,0 +1,154 @@
+.task-list {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 77%;
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .task-list {
+    width: 100%;
+  }
+}
+
+.task-list__container {
+  display: flex;
+  flex-grow: 1;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  .task-list__container {
+    margin-top: 19px;
+    flex-wrap: wrap;
+  }
+}
+
+.task-list__divider {
+  background-color: rgba(241, 241, 241, 1);
+  width: 1px;
+  height: 529px;
+}
+
+.task-list__content {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 0;
+  width: fit-content;
+  padding: 72px 55px;
+}
+
+@media (max-width: 991px) {
+  .task-list__content {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.task-list__header {
+  align-self: start;
+  display: flex;
+  gap: 16px;
+  font-size: 32px;
+  color: rgba(100, 196, 237, 1);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .task-list__header {
+    white-space: initial;
+  }
+}
+
+.task-list__title {
+  font-family: Montserrat, sans-serif;
+  flex-grow: 1;
+}
+
+.task-list__header-icon {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 15px;
+  margin: auto 0;
+}
+
+.task-list__separator {
+  background-color: rgba(242, 242, 242, 1);
+  margin-top: 22px;
+  height: 1px;
+  border: none;
+}
+
+@media (max-width: 991px) {
+  .task-list__separator {
+    max-width: 100%;
+  }
+}
+
+.task-list__item {
+  align-self: start;
+  display: flex;
+  margin-top: 31px;
+  gap: 15px;
+}
+
+.task-list__checkbox {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(232, 232, 232, 1);
+}
+
+.task-list__task-text {
+  font-family: Lato, sans-serif;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.task-list__item-icon {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 20px;
+}
+
+.task-list__item-content {
+  display: flex;
+  gap: 15px;
+}
+
+.task-list__action-icon {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 11px;
+  margin: auto 0;
+}
+
+.task-list__add-task {
+  align-self: start;
+  display: flex;
+  margin-top: 23px;
+  gap: 19px;
+  color: rgba(180, 180, 180, 1);
+  letter-spacing: 0.15px;
+}
+
+.task-list__add-icon {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 14px;
+  align-self: start;
+}
+
+.task-list__add-text {
+  font-family: Lato, sans-serif;
+}
